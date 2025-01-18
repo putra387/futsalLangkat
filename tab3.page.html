@@ -1,0 +1,196 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title class="title-text">Champion Langkat Cup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="section">
+    <h2 class="section-title">Aturan Turnamen</h2>
+    <p class="section-description">Aturan turnamen futsal yang berlaku adalah sebagai berikut:</p>
+
+    <ion-list>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="time" slot="start"></ion-icon>
+        <ion-label>Setiap pertandingan terdiri dari dua babak, masing-masing 10 menit dengan waktu istirahat 5 menit.</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="timer" slot="start"></ion-icon>
+        <ion-label>Jika skor imbang setelah waktu normal, pertandingan akan dilanjutkan dengan perpanjangan waktu 5 menit.</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="football" slot="start"></ion-icon>
+        <ion-label>Jika hasil masih imbang, akan dilanjutkan dengan adu penalti (3 tendangan pertama).</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="stopwatch" slot="start"></ion-icon>
+        <ion-label>Setiap tim diberi waktu 5 menit untuk mempersiapkan diri sebelum pertandingan dimulai.</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="alert-circle" slot="start"></ion-icon>
+        <ion-label>Pelanggaran keras dapat dikenakan kartu kuning atau kartu merah sesuai tingkat pelanggaran.</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="rule-item">
+        <ion-icon name="shirt" slot="start"></ion-icon>
+        <ion-label>Setiap tim harus membawa jersey dengan nomor punggung yang jelas dan berbeda antara satu pemain dengan pemain lainnya.</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Struktur Bagan Pertandingan -->
+    <div class="section">
+      <h2 class="section-title">Bagan Pertandingan</h2>
+      <div class="tournament-bracket">
+        <!-- Round of 32 -->
+        <div class="round round-32">
+          <h3>Babak 32 Besar</h3>
+          <div class="match">Tim 1 vs Tim 2</div>
+          <div class="match">Tim 3 vs Tim 4</div>
+          <div class="match">Tim 5 vs Tim 6</div>
+          <div class="match">Tim 7 vs Tim 8</div>
+          <div class="match">Tim 9 vs Tim 10</div>
+          <div class="match">Tim 11 vs Tim 12</div>
+          <div class="match">Tim 13 vs Tim 14</div>
+          <div class="match">Tim 15 vs Tim 16</div>
+          <div class="match">Tim 17 vs Tim 18</div>
+          <div class="match">Tim 19 vs Tim 20</div>
+          <div class="match">Tim 21 vs Tim 22</div>
+          <div class="match">Tim 23 vs Tim 24</div>
+          <div class="match">Tim 25 vs Tim 26</div>
+          <div class="match">Tim 27 vs Tim 28</div>
+          <div class="match">Tim 29 vs Tim 30</div>
+          <div class="match">Tim 31 vs Tim 32</div>
+        </div>
+  
+        <!-- Round of 16 -->
+        <div class="round round-16">
+          <h3>Babak 16 Besar</h3>
+          <div class="match">Pemenang 1/2 vs Pemenang 3/4</div>
+          <div class="match">Pemenang 5/6 vs Pemenang 7/8</div>
+          <div class="match">Pemenang 9/10 vs Pemenang 11/12</div>
+          <div class="match">Pemenang 13/14 vs Pemenang 15/16</div>
+          <div class="match">Pemenang 17/18 vs Pemenang 19/20</div>
+          <div class="match">Pemenang 21/22 vs Pemenang 23/24</div>
+          <div class="match">Pemenang 25/26 vs Pemenang 27/28</div>
+          <div class="match">Pemenang 29/30 vs Pemenang 31/32</div>
+        </div>
+  
+        <!-- Quarter-finals -->
+        <div class="round quarter-finals">
+          <h3>Perempat Final</h3>
+          <div class="match">Pemenang R16-1 vs Pemenang R16-2</div>
+          <div class="match">Pemenang R16-3 vs Pemenang R16-4</div>
+          <div class="match">Pemenang R16-5 vs Pemenang R16-6</div>
+          <div class="match">Pemenang R16-7 vs Pemenang R16-8</div>
+        </div>
+  
+        <!-- Semi-finals -->
+        <div class="round semi-finals">
+          <h3>Semifinal</h3>
+          <div class="match">Pemenang QF-1 vs Pemenang QF-2</div>
+          <div class="match">Pemenang QF-3 vs Pemenang QF-4</div>
+        </div>
+  
+        <!-- Final -->
+        <div class="round final">
+          <h3>Final</h3>
+          <div class="match">Pemenang SF-1 vs Pemenang SF-2</div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+
+
+
+
+
+  <style>
+    .title-text {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+    }
+  
+    .section {
+      padding: 20px;
+      background-color: #5de05d;
+      border-radius: 10px;
+      margin: 10px;
+    }
+  
+    .section-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #333;
+    }
+  
+    .section-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #bf0c0c;
+    }
+  
+    .rule-item {
+      background-color: #e1bd09;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(229, 189, 7, 0.1);
+      padding: 10px;
+    }
+  
+    .rule-item ion-icon {
+      color: #fc0303;
+      font-size: 20px;
+    }
+  
+    .rule-item ion-label {
+      font-size: 16px;
+      color: #090909;
+    }
+  
+    .tournament-bracket {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .round {
+      text-align: center;
+    }
+    
+    .round h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e8180a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .match {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(236, 13, 13, 0.1);
+    font-size: 16px;
+    color: #e30f0f;
+  }
+
+  .match:hover {
+    background-color: #f9d731;
+    color: rgb(200, 11, 11);
+    cursor: pointer;
+  }
+   
+  </style>
+
+
+

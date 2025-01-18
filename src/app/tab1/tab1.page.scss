@@ -1,0 +1,142 @@
+/* Hero Section */
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;}
+
+
+
+.hero {
+  position: relative;
+  text-align: center;
+  background: var(--ion-color-light);
+  padding: 0; /* Menghilangkan padding agar lebih rapat */
+
+  .hero-content {
+    z-index: 2;
+    position: relative;
+    padding: 10px 20px; /* Memberikan jarak kecil pada konten */
+
+    h1 {
+      font-size: 24px;
+      color: var(--ion-color-success);
+      margin-bottom: 10px;
+      span {
+        color: var(--ion-color-success);
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--ion-color-success);
+    }
+  }
+
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto; /* Sesuaikan dengan tinggi gambar */
+    display: inline-block; /* Menyusun gambar dalam box */
+
+    .image-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Memberikan efek transparan gelap di belakang gambar */
+      border-radius: 12px;
+      z-index: 1;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto; /* Menjaga rasio gambar tetap utuh */
+      max-height: 300px; /* Menyesuaikan tinggi gambar */
+      object-fit: contain; /* Menghindari zoom atau potongan pada gambar */
+      border-radius: 12px;
+    }
+  }
+}
+
+/* Features Section */
+
+.features {
+  margin: 20px 10px;
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--ion-color-success);
+    margin-bottom: 20px;
+  }
+
+  ion-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    img {
+      width: 100%;
+      height: 150px;
+       max-height: 300px;
+      object-fit: contain; /* Gambar dalam card tidak terpotong */
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    ion-card-header {
+      text-align: center;
+    }
+
+    ion-card-title {
+      font-size: 18px;
+      color: var(--ion-color-success);
+    }
+
+    ion-card-content {
+      font-size: 14px;
+      text-align: center;
+      color: var(--ion-color-success);
+    }
+  }
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--ion-color-light);
+  color: var(--ion-color-medium);
+  font-size: 14px;
+}
+
+/* Responsif untuk perangkat dengan lebar layar lebih kecil */
+@media (max-width: 768px) {
+  .hero-image-wrapper {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: 250px; /* Menyesuaikan tinggi gambar di tablet */
+  }
+
+  .features ion-card img {
+    height: 120px; /* Mengurangi tinggi gambar di fitur card */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-wrapper {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: 200px; /* Mengurangi tinggi gambar di ponsel */
+  }
+
+  .features ion-card img {
+    height: 100px; /* Mengurangi tinggi gambar di ponsel */
+  }
+}

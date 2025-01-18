@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>
+      Registrasi Tim Futsal
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-card class="welcome-card bg-content">
+
+    <ion-toolbar color="success">
+
+    <ion-card-header>
+      <ion-card-title color="primary">Registrasi Tim Futsal</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Silakan isikan form dibawah untuk PENDAFTARAN Tim futsal</p>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Nama Tim</ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nomor HP/WA</ion-label>
+          <ion-input type="text" [(ngModel)]="nohp"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nama Manager</ion-label>
+          <ion-input type="manager" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Kecamatan Tim</ion-label>
+          <ion-select [(ngModel)]="prodi" class="popover-content" placeholder="Pilih kecamtan">
+            <ion-select-option value="Bahorok">Bahorok</ion-select-option>
+            <ion-select-option value="Serapit">Serapit</ion-select-option>
+            <ion-select-option value="Salapian">Salapian</ion-select-option>
+            <ion-select-option value="Kutambaru">Kutambaru</ion-select-option>   
+            <ion-select-option value="sei.Bengai">Sei.Bengai</ion-select-option>
+            <ion-select-option value="Kuala">Kuala</ion-select-option>
+            <ion-select-option value="Selesai">Selesai</ion-select-option>
+            <ion-select-option value="Setabat">Stabat</ion-select-option>
+            <ion-select-option value="Batang sarangan">Batang sarangan</ion-select-option>
+            <ion-select-option value="Sawit Seberang">Sawit Seberang</ion-select-option>
+            <ion-select-option value="Padang Tulang">Padang tualang</ion-select-option>
+            <ion-select-option value="Hinai">Hinai</ion-select-option>
+            <ion-select-option value="Secanggang">Secanggang</ion-select-option>
+            <ion-select-option value="Tanjung Pura">Tanjung Pura</ion-select-option>
+            <ion-select-option value="Gebang">Gebang</ion-select-option>
+            <ion-select-option value="Babalan">Babalan</ion-select-option>
+            <ion-select-option value="Babalan">sei.Lepan</ion-select-option>
+            <ion-select-option value="Berandan Barat">Berandan Barat</ion-select-option>
+            <ion-select-option value="Besitang">Besitang</ion-select-option>
+            <ion-select-option value="Pangkalan susu">Pangkalan susu</ion-select-option>
+            <ion-select-option value="Pematang jaya">Pematang Jaya</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">kategori Tahun kelahiran</ion-label>
+          <ion-select [(ngModel)]="tahunlulus" placeholder="Pilih tahun Kelahiran">
+            <ion-select-option value="13">13</ion-select-option>
+            <ion-select-option value="15">15</ion-select-option>
+            <ion-select-option value="u17">17</ion-select-option>
+            <ion-select-option value="19">19</ion-select-option>
+            <ion-select-option value="20">20</ion-select-option>
+            <ion-select-option value="23">23</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <div padding>
+        <ion-button expand="block" color="primary" size="medium" (click)="addRegister()">
+          <ion-icon name="trending-up-outline"></ion-icon>
+          Daftar
+        </ion-button>
+      </div>
+    
+    </ion-card-content>
+  </ion-toolbar>
+  </ion-card>
+</ion-content>
+
+
+
